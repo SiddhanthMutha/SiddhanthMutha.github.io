@@ -584,35 +584,39 @@
             </div>
             <div class="section-content open">
                 <div class="project-item">
-                    <div class="project-title">RAG System — Intelligent Document Assistant</div>
+                    <div class="project-title"><a href="https://github.com/SiddhanthMutha/FuseRAG" target="_blank" style="color: var(--text-primary); text-decoration: none;">FuseRAG</a></div>
                     <div class="project-desc">
-                        <p>Built a production-ready Retrieval-Augmented Generation (RAG) system enabling natural language Q&A over multiple document types (PDFs, code files, web pages, markdown). Implemented a complete end-to-end pipeline with document ingestion, hybrid search combining Pinecone vector database with BM25 keyword matching, cross-encoder reranking for improved relevance, and multi-provider LLM support (OpenAI GPT-4, Anthropic Claude) with real-time streaming via WebSocket.</p>
-                        <p>Deployed FastAPI-based backend with production-grade features including semantic and recursive document chunking strategies, query rewriting for enhanced retrieval, middleware for logging and error handling, rate limiting, and complete Docker containerization with docker-compose for scalable deployment.</p>
+                        <p>A production-minded RAG system for chatting with documents, code, markdown, and web content without treating retrieval like an afterthought. FuseRAG fuses semantic vector search with BM25 keyword matching via Reciprocal Rank Fusion, then applies cross-encoder reranking to surface the most relevant chunks before generation.</p>
+                        <p>Built in an evaluation-first mindset with metrics including Precision@k, Recall@k, MRR, nDCG, Faithfulness, and Correctness. Features a FastAPI backend, Pinecone-compatible vector store, PostgreSQL/pgvector metadata storage, and a lightweight web UI with Jinja2 and HTMX for end-to-end document ingestion, querying, and evaluation.</p>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">RAG</span>
-                        <span class="project-tag">Pinecone</span>
+                        <span class="project-tag">Hybrid Retrieval</span>
                         <span class="project-tag">BM25</span>
+                        <span class="project-tag">Reciprocal Rank Fusion</span>
+                        <span class="project-tag">Cross-Encoder</span>
                         <span class="project-tag">FastAPI</span>
-                        <span class="project-tag">WebSocket</span>
-                        <span class="project-tag">Docker</span>
-                        <span class="project-tag">OpenAI</span>
-                        <span class="project-tag">Claude</span>
+                        <span class="project-tag">Pinecone</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">HTMX</span>
+                        <span class="project-tag">Evaluation</span>
                     </div>
                 </div>
 
                 <div class="project-item">
-                    <div class="project-title">Multi-Agent Research Assistant using LangGraph</div>
+                    <div class="project-title"><a href="https://github.com/SiddhanthMutha/ResearchFlow" target="_blank" style="color: var(--text-primary); text-decoration: none;">ResearchFlow</a></div>
                     <div class="project-desc">
-                        <p>Designed and implemented a multi-agent AI system using LangGraph where four specialized agents collaborate to answer complex research questions: Coordinator Agent (breaks questions into subtasks), Search Agent (web search via Tavily API), Reader Agent (fetches and summarizes URL content), and Writer Agent (synthesizes coherent answers).</p>
-                        <p>Integrated real-time WebSocket progress updates for agent activities, implemented comprehensive cost tracking for token usage optimization, and built an SQLite-based research history database for session persistence.</p>
+                        <p>A small but real LangGraph research system with four specialized agents working together: a Coordinator that turns raw prompts into cleaner research tasks, a Search Agent that finds relevant web results, a Reader Agent that fetches and extracts the useful signal from pages, and a Writer Agent that synthesizes everything into a final answer with sources.</p>
+                        <p>Features a polished static frontend served directly from FastAPI, live WebSocket progress updates while each agent works, and an SQLite history layer so research runs don't disappear after one request. Built to be a clean end-to-end product surface: orchestrated agents, API, persistence, and a frontend that makes the orchestration visible.</p>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">LangGraph</span>
                         <span class="project-tag">Multi-Agent</span>
-                        <span class="project-tag">Tavily</span>
+                        <span class="project-tag">FastAPI</span>
                         <span class="project-tag">WebSocket</span>
                         <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Tavily</span>
+                        <span class="project-tag">Frontend</span>
                     </div>
                 </div>
             </div>
@@ -722,6 +726,12 @@
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
                         </span>
                         <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </span>
+                        <span>MLOps</span>
                     </div>
                     <div class="tech-item">
                         <span class="tech-icon">
